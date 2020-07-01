@@ -1,3 +1,21 @@
 body {
     background: white;
 }
+
+.header {
+    height: 100px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+}
