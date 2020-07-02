@@ -1,21 +1,45 @@
 body {
-    background: white;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-    height: 100px;
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
-nav {
+header {
+    /*width = andchura*/
+    width: 100%;
+    /*height altura*/
+    height: 60px;
+}
+
+.icon {
+    background-image: url(/assets/logo.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    /* Para que la imagen se adapte al tamaño del contenedor */
+    background-size: contain;
+    width: 150px;
+    height: 50px;
+}
+
+header nav {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1;
+    grid-template-columns: repeat(13, 1fr);
 }
 
-ul li {
+header nav .nav-right-section {
     list-style: none;
 }
 
-ul a {
+a {
     text-decoration: none;
+    cursor: pointer;
 }
+
+
+/* Continuar posicionando las etiquetas anclas y el botón*/
