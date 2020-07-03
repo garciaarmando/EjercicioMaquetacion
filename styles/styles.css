@@ -20,6 +20,7 @@ nav {
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     justify-items: center;
+    color: #8087af;
 }
 
 nav .icon {
@@ -40,37 +41,32 @@ nav .home {
     grid-column-end: 7;
     justify-content: center;
     align-content: center;
-    color: black;
     cursor: pointer;
 }
 
 nav .about {
     grid-column-start: 7;
     grid-column-end: 8;
-    color: black;
     cursor: pointer;
 }
 
 nav .FAQ {
     grid-column-start: 8;
     grid-column-end: 9;
-    color: black;
     cursor: pointer;
 }
 
 nav .contact {
     grid-column-start: 9;
     grid-column-end: 10;
-    color: black;
     cursor: pointer;
 }
 
 nav .sign-up {
     grid-column-start: 10;
     grid-column-end: 11;
-    color: black;
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
 }
 
 nav button {
@@ -86,7 +82,31 @@ nav button {
     cursor: pointer;
 }
 
-div:hover {
+nav .home:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #73f4de;
+    text-decoration-style: solid;
+}
+
+nav .about:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #73f4de;
+    text-decoration-style: solid;
+}
+
+nav .FAQ:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #73f4de;
+    text-decoration-style: solid;
+}
+
+nav .contact:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #73f4de;
+    text-decoration-style: solid;
+}
+
+nav .sign-up:hover {
     text-decoration-line: underline;
     text-decoration-color: #73f4de;
     text-decoration-style: solid;
@@ -94,7 +114,50 @@ div:hover {
 
 nav button:hover {
     color: black;
-    /* !important; */
     box-shadow: 0 4px 16px #73f4de;
     transition: all 0.2s ease;
+}
+
+main {
+    width: 100%;
+    height: 750px;
+}
+
+main .main-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.main-text {
+    color: #021060;
+    font-size: 50px;
+    font-weight: bold;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.main-secondary-text {
+    color: #021060;
+    font-size: 20px;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.main-button {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: start;
+    align-self: inherit;
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: #73f4de;
+    border: transparent;
+    border-radius: 30px;
+    cursor: pointer;
 }
