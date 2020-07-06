@@ -126,32 +126,34 @@ main {
 main .main-container {
     height: auto;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    margin-left: 50px;
 }
 
-.main-text {
+main .main-container .main-paragraph {
     color: #021060;
     font-size: 50px;
     font-weight: bold;
-    grid-column: 2/4;
-    grid-row: 2/3;
-}
-
-.main-secondary-text {
-    color: #021060;
-    font-size: 20px;
-    grid-column: 2/4;
-    grid-row: 3/4;
     justify-self: center;
     align-self: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.main-container .main-secondary-text {
+    color: #021060;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 50px;
 }
 
 .main-button {
     grid-column: 2/3;
     grid-row: 4/5;
     justify-self: start;
-    align-self: inherit;
+    align-self: center;
     width: 180px;
     height: 40px;
     color: white;
@@ -160,4 +162,34 @@ main .main-container {
     border: transparent;
     border-radius: 30px;
     cursor: pointer;
+}
+
+.main-container .main-button:hover {
+    color: black;
+    box-shadow: 0 4px 16px #73f4de;
+    transition: all 0.2s ease;
+}
+
+.main-container img {
+    width: 700px;
+    grid-column-start: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.main-last-part {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+.main-last-part .main-why p {
+    color: #021060;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main-last-part .main-reason p {
+    color: #021060;
+    font-size: 20px;
 }
