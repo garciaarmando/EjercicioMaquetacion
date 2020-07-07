@@ -1,5 +1,6 @@
 body {
-    margin: 0;
+    margin: 0px auto;
+    width: auto;
     padding: 0;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +22,7 @@ nav {
     align-items: center;
     justify-items: center;
     color: #8087af;
+    margin-top: 10px;
 }
 
 nav .icon {
@@ -34,6 +36,7 @@ nav .icon {
     grid-column-start: 1;
     grid-column-end: 2;
     cursor: pointer;
+    margin-left: 30px;
 }
 
 nav .home {
@@ -114,7 +117,7 @@ nav .sign-up:hover {
 
 nav button:hover {
     color: black;
-    box-shadow: 0 4px 16px #73f4de;
+    box-shadow: 0 4px 5px #73f4de;
     transition: all 0.2s ease;
 }
 
@@ -128,7 +131,7 @@ main .main-container {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 100%;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 main .main-container .main-paragraph {
@@ -137,6 +140,8 @@ main .main-container .main-paragraph {
     font-weight: bold;
     justify-self: center;
     align-self: center;
+    justify-items: center;
+    align-items: center;
     margin-top: 100px;
     margin-bottom: 50px;
 }
@@ -152,7 +157,7 @@ main .main-container .main-paragraph {
 .main-button {
     grid-column: 2/3;
     grid-row: 4/5;
-    justify-self: start;
+    justify-self: center;
     align-self: center;
     width: 180px;
     height: 40px;
@@ -193,3 +198,45 @@ main .main-container .main-paragraph {
     color: #021060;
     font-size: 20px;
 }
+
+.last-images {
+    width: 100%;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+}
+
+.last-images img {
+    width: 150px;
+}
+
+.last-images .center-image {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+/* footer {
+    width: 100%;
+}
+
+footer .footer-container {
+    display: flex;
+}
+
+footer .footer-container .footer-first-part {
+    justify-content: center;
+}
+ */
+
+
+/* footer 3 columnas y 3 filas */
+
+
+/* el logo recorrerlo a la derecha */
+
+
+/* alinear el body al centro */
+
+
+/* hoover del botón overflow hidden  sombra más pequeña*/
