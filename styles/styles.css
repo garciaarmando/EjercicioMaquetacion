@@ -201,42 +201,91 @@ main .main-container .main-paragraph {
 
 .last-images {
     width: 100%;
-    /* display: inline-block; */
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
+    align-content: center;
 }
 
-.last-images img {
-    width: 150px;
+.last-images .first-image {
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 1;
 }
 
-.last-images .center-image {
-    margin-left: 250px;
-    margin-right: 250px;
+.last-images .second-image {
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 1;
 }
 
-
-/* footer {
-    width: 100%;
+.last-images .third-image {
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 1;
 }
 
-footer .footer-container {
-    display: flex;
+.last-images .first-image-primary-text {
+    color: #021060;
+    font-size: 30px;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 2;
 }
 
-footer .footer-container .footer-first-part {
-    justify-content: center;
+.last-images .second-image-primary-text {
+    color: #021060;
+    font-size: 30px;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 2;
 }
- */
 
+.last-images .third-image-primary-text {
+    color: #021060;
+    font-size: 30px;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 2;
+}
 
-/* footer 3 columnas y 3 filas */
+.last-images .first-image-secondary-text {
+    color: #021060;
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 3;
+    text-size-adjust: inherit;
+}
 
+.last-images .second-image-secondary-text {
+    color: #021060;
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 3;
+}
 
-/* el logo recorrerlo a la derecha */
-
-
-/* alinear el body al centro */
-
-
-/* hoover del botón overflow hidden  sombra más pequeña*/
+.last-images .third-image-secondary-text {
+    color: #021060;
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 3;
+}
